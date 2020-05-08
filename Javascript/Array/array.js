@@ -1,3 +1,5 @@
+// 여기는 md 파일로 만들고 하위 api 를 js 로 진행하는게 어떤가?
+
 //array 는 global object. list-like objects.
 
 // create an Array
@@ -52,9 +54,24 @@ const newLength2 = fruits.unshift("Strawberry"); // push() 와 동작이 같고 
 
 // Find the index of an item in an array
 fruits.push("Mango");
+fruits.push("Pear");
 const index1 = fruits.indexOf("Banana");
 const index2 = fruits.indexOf("Melon");
 // console.log(index1);
 // 1
 // console.log(index2);
 // -1
+
+// Remove items by index position
+const removedItem = fruits.splice(index1, 2); // splice(a, b) -> a 인덱스 부터 b 갯수만큼 잘라냄. 잘라낸 값을 리턴
+// console.log(removedItem);
+// ["Banana", "Mango"]
+// console.log(fruits);
+// ["Strawberry", "Pear"]
+
+// ShallowCopy an array
+const shallowCopy = fruits.slice();
+// console.log(shallowCopy);
+// ["Strawberry", "Pear"]
+
+// 아래쪽에 syntax 와 description 은 md 파일로 바꾸면서 진행하기
