@@ -83,6 +83,7 @@ const arr = [0, 1, , , , 5, 6];
 
 arr.find((value, index) => {
   console.log("Visited index : " + index + " with value " + value);
+  if (value == 1) return true;
 });
 // Visited index: 0 with value 0
 // Visited index: 1 with value 1
